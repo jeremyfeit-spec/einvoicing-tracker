@@ -1,0 +1,41 @@
+# E-Invoicing Mandate Tracker — Changelog
+
+## April 12, 2026
+
+### Changes detected:
+- **Norway**: Government formally instructed mandatory B2B e-invoicing from Jan 1, 2027 (accelerated one year from original 2028 proposal). EHF as mandatory standard. Full digital bookkeeping by Jan 2030. mandateType updated to "B2G (B2B from 2027)". (Source: https://www.vatupdate.com/2026/03/17/norway-plans-mandatory-b2b-e-invoicing-from-2027-and-full-digital-bookkeeping-by-2030/)
+- **Gabon** (NEW): Added to tracker. 2026 Finance Law (Law No. 041/2025) mandates e-invoicing (FNE) for all taxpayers to claim income tax and VAT deductions. Effective Jan 2026 with 6-month soft landing; full compliance by Jul 2026. (Source: https://kpmg.com/us/en/taxnewsflash/news/2026/03/tnf-africa-gabon-finance-law-2026-includes-mandatory-e-invoicing-other-recent-tax-developments.html)
+
+## April 11, 2026 (Run 4)
+
+### Changes detected:
+- **Ireland** (NEW): Added to tracker. Three-phase B2B e-invoicing mandate confirmed — large corporates from Nov 2028, all VAT-registered in intra-EU trade from Nov 2029, full ViDA cross-border by Jul 2030. EN 16931 / Peppol format. Part of VAT Modernisation programme. (Source: https://www.vatupdate.com/2026/03/13/ireland-sets-phased-rollout-for-mandatory-b2b-e-invoicing-and-real-time-vat-reporting/)
+- **Cameroon** (NEW): Added to tracker. 2026 Finance Law mandates real-time e-invoicing for all taxable persons via clearance model. Central platform with accredited third-party providers. (Source: https://www.vatupdate.com/2026/02/26/cameroon-mandates-e-invoicing-in-2026-finance-law/)
+- **Pakistan** (NEW): Added to tracker. FBR e-invoicing mandate expanding via STGO 01/2026. Real-time reporting required through licensed integrators; invoice edits restricted to 72 hours. (Source: https://www.vatupdate.com/2026/04/11/pakistan-clarifies-integration-and-amendment-rules-for-mandatory-e-invoicing/)
+
+## April 11, 2026 (Run 3)
+
+### Changes detected:
+- **Serbia**: April 2026 amendments now in effect — retail e-invoicing for corporate cardholders mandatory, internal invoicing required in SEF, new Rulebook amendments effective Apr 2026 tax period. (Source: https://www.comarch.com/trade-and-services/data-management/legal-regulation-changes/serbia-adopts-key-amendments-to-electronic-invoicing-and-vat-laws-in-2026/)
+- **Denmark**: Officially adopted Nemhandel BIS 4 as new unified e-invoicing standard (Peppol BIS 4-based, EN 16931 compliant). OIOUBL 2.1 remains until Jul 2029; migration starts 2028. (Source: https://www.vatupdate.com/2026/03/23/denmark-unveils-nemhandel-bis-4-e-invoicing-standard-cancels-oioubl-3-0-sets-2029-migration-timeline/)
+
+## April 11, 2026 (Run 2)
+
+### Changes detected:
+- **Romania**: Expanding mandatory e-invoicing to individuals (PFAs/CNP-based economic activities) from June 1, 2026. e-VAT enforcement tightening under GEO 13/2026. mandateType updated to B2B + B2G + B2C. (Source: https://www.fiscal-requirements.com/news/5058)
+- **Philippines**: BIR extended structured e-invoicing full mandate deadline from March 2026 to December 31, 2026 via Revenue Regulation 26-2025. EIS platform still under development. (Source: https://kpmg.com/us/en/taxnewsflash/news/2025/10/philippines-e-invoicing-compliance-deadline-extended.html)
+- **South Africa**: SARS confirmed multi-year e-invoicing and digital reporting reform plan. Mandatory phased rollout now targeted from 2028 (previously tracked as 2027). Voluntary pilot/design phase 2026–2027. (Source: https://kpmg.com/us/en/taxnewsflash/news/2026/02/south-africa-tax-authority-confirms-multi-year-e-invoicing-digital-reporting-reform.html)
+- **Hungary**: Public consultation on ViDA-aligned mandatory e-invoicing launched. Sector-specific mandates already live (energy Jul 2025, water utilities Jan 2026). EN 16931 format confirmed. (Source: https://www.vatupdate.com/2026/03/15/hungary-to-mandate-real-time-e-invoicing-and-vat-reporting-under-vida-reform-by-2026/)
+
+## April 11, 2026
+
+### Changes detected:
+- **Poland**: KSeF Phase 2 went live April 1, 2026 for all VAT-registered businesses (SMEs, sole proprietors). Status: Partially Live → Live. Micro-entrepreneurs have until Jan 2027. (Source: https://sovos.com/regulatory-updates/global-vat/spain-adopts-mandatory-b2b-e-invoicing/)
+- **Spain**: Royal Decree 238/2026 published March 31 mandating B2B e-invoicing. Large businesses (>€8M): ~12 months after ministerial order (~mid-2027); all others: ~24 months after. Hybrid architecture: AEAT public platform + interoperable private platforms. (Source: https://kpmg.com/us/en/taxnewsflash/news/2026/03/spain-e-invoicing-mandate-b2b.html)
+- **Belgium**: Grace period ended April 2026. Penalties now active for B2B e-invoicing non-compliance. (Source: VATupdate week 13/2026)
+- **Singapore**: Mandatory for new voluntary GST registrants from April 1, 2026. (Source: EY Global E-Invoicing Tracker April 2026)
+- **Bolivia**: Groups 10–12 must begin e-invoicing from April 1, 2026 (deadline extension). (Source: VATupdate)
+- **Turkey**: Updated e-invoice package and VAT code controls effective April 1, 2026. (Source: VATupdate week 13/2026)
+- **Germany**: Published GEBA framework; retiring older XRechnung profiles. ZUGFeRD v2.5 releasing May 20, 2026. (Source: VATupdate)
+- **Denmark**: Cancelled OIOUBL 3.0; announced "Unified E-Invoicing Standard" based on common UBL approach. (Source: VATupdate)
+- **UAE**: Introduced 24-month grace period for intra-VAT group e-invoicing obligations. (Source: VATupdate)

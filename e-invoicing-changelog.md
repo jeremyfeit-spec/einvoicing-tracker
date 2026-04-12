@@ -1,5 +1,12 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## April 12, 2026 (Run 2)
+
+### Changes detected:
+- **Bosnia and Herzegovina** (NEW): Added to tracker. Federation parliament passed comprehensive Fiscalization Bill (Feb 2026). Central Fiscalization Platform replaces device-based systems. B2C fiscal registers by 2028; mandatory B2B/B2G e-invoicing by 2029. (Source: https://www.vatupdate.com/2026/04/11/bosnia-and-herzegovina-mandates-e-invoicing-and-real-time-transaction-reporting-for-all-businesses/)
+- **Latvia** (CORRECTION): Status corrected from "Live" to "Partially Live". B2B mandate was postponed from 2026 to Jan 2028 per June 2025 parliamentary amendment. Only B2G is mandatory from Jan 2026. Voluntary B2B from Mar 2026. (Source: https://www.comarch.com/trade-and-services/data-management/legal-regulation-changes/latvia-postpones-b2b-e-invoicing-mandate-to-2028-amid-technical-delays/)
+- **Belgium**: Updated penalty details — graduated fines: €1,500 (1st offence), €3,000 (2nd), €5,000 (3rd+) per quarter; plus 60–100% of VAT due per invoice. (Source: https://www.vertexinc.com/resources/resource-library/belgiums-2026-e-invoicing-regulations-explained-scope-deadlines-and-penalties)
+
 ## April 12, 2026
 
 ### Changes detected:

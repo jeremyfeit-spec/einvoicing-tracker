@@ -16,7 +16,7 @@ After mounting, the files will be accessible at the VM mount path. The folder co
 ## What to do
 
 ### Step 1: Mount the folder and read the current tracker
-First, mount the user's folder using request_cowork_directory with path "/Users/jfeit/einvocing-country-overview". Then read the e-invoicing-tracker.jsx file. This is a React component containing a `countries` data array with every tracked country's e-invoicing mandate details (status, effective dates, formats, platforms, summaries, etc.). There are currently 78 countries tracked across 6 regions (Europe, Middle East, Asia-Pacific, Latin America, Africa, North America).
+First, mount the user's folder using request_cowork_directory with path "/Users/jfeit/einvocing-country-overview". Then read the e-invoicing-tracker.jsx file. This is a React component containing a `countries` data array with every tracked country's e-invoicing mandate details (status, effective dates, formats, platforms, summaries, etc.). There are currently 79 countries tracked across 6 regions (Europe, Middle East, Asia-Pacific, Latin America, Africa, North America).
 
 ### Step 2: Research latest changes
 Run web searches for the latest e-invoicing mandate news and changes. Use queries like:
@@ -45,7 +45,8 @@ If there are ANY changes:
 1. Edit the countries array in e-invoicing-tracker.jsx to reflect the updates
 2. Update the LAST_UPDATED constant at the top of the file to today's date
 3. Regenerate e-invoicing-tracker.html from the updated JSX data (same standalone HTML format as before — self-contained with React via CDN, all country data embedded inline)
-4. Append a change log entry to e-invoicing-changelog.md in this format:
+4. Copy e-invoicing-tracker.html to index.html
+5. Append a change log entry to e-invoicing-changelog.md in this format:
 
 ```
 ## [Today's Date]
@@ -55,7 +56,7 @@ If there are ANY changes:
 - **[Country]**: [What changed] (Source: [URL])
 ```
 
-If there are NO changes, still update LAST_UPDATED, regenerate the HTML, and append:
+If there are NO changes, still update LAST_UPDATED, regenerate the HTML, copy to index.html, and append:
 ```
 ## [Today's Date]
 No mandate changes detected today. [Number] sources checked.
@@ -92,8 +93,15 @@ Always include:
 
 IMPORTANT: Send exactly ONE message. Do NOT send thread replies. Do NOT post a full country status list — just the changes and links above.
 
-### Step 6: Summary
-Provide a brief summary of what was found, updated, and posted.
+### Step 6: GitHub push — HANDS OFF
+**DO NOT run any git commands from the sandbox.** The sandbox cannot push to GitHub (the token is blocked by the egress proxy), and any failed git operations leave stale lock files that also block the local push script.
+
+The GitHub push is handled automatically by a separate launchctl job on Jeremy's Mac that runs `github-push.sh` after the Cowork task updates the files. That script already includes lock file cleanup.
+
+Just confirm in your summary that the local files (JSX, HTML, index.html, changelog) were updated successfully — the push will happen automatically.
+
+### Step 7: Summary
+Provide a brief summary of what was found, updated, and posted to Slack.
 
 ## Important notes
 - Always update the LAST_UPDATED date in the JSX file, even if no mandate data changed
@@ -103,3 +111,4 @@ Provide a brief summary of what was found, updated, and posted.
 - ALWAYS send the Slack message, even on days with no changes
 - ALWAYS read the tracker file to build the country list dynamically — never use a stale hardcoded list
 - ALWAYS mount /Users/jfeit/einvocing-country-overview first before trying to read/write files
+- NEVER run git commands — this is critical. Git operations from the sandbox leave lock files that break the local push script.

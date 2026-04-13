@@ -1,5 +1,11 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## April 13, 2026
+
+### Changes detected:
+- **Greece**: Updated summary and penalties to reflect new mandatory B2B e-invoicing phases — large taxpayers (>€1M revenue) must issue e-invoices from Mar 2, 2026 (soft launch through May 3); all other taxpayers by Oct 1, 2026. Penalties updated to 50% of VAT for VATable transactions, €500–€1,000 for non-VAT. (Source: https://www.vatcalc.com/greece/greece-mydata-e-book-and-e-invoices-update/)
+- **Malaysia**: Updated summary and penalties to reflect Phase 4 grace period extension — PM announced Dec 31, 2026 extended grace period for SMEs (RM1M–RM5M turnover). RM10,000 individual transaction rule remains strictly enforced. (Source: https://jomeinvoice.my/phase-4-einvoice-deadline-extended-sme-guide-2026/)
+
 ## April 12, 2026 (Run 2)
 
 ### Changes detected:

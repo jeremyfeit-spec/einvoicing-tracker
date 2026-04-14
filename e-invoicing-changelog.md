@@ -1,5 +1,21 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## April 14, 2026
+
+### Changes detected:
+- **Oman**: Major update — Fawtara e-invoicing system details confirmed. Approved as Peppol Authority with 5-corner model. Phase 1 (Aug 2026): ~153 largest taxpayers. effectiveDate updated to "Aug 2026". Format updated to "XML / JSON (Peppol)", platform to "OTA Fawtara". Sandbox live since Feb 2026; ASP accreditation from May 2026. (Source: https://www.vatupdate.com/2025/12/26/omans-fawtara-phased-rollout-of-mandatory-b2b-e-invoicing-begins-august-2026/)
+- **Slovakia**: Updated with approved legislation details. Parliament approved mandatory B2B e-invoicing law Dec 2025. Format updated to "XML (UBL 2.1 / CII) EN 16931", platform to "IS EFA / Peppol". 5-corner Peppol model with certified Digital Postmen. mandateType updated to "B2B + B2G". Voluntary transition period Jan 2026–Jan 2027. (Source: https://sovos.com/regulatory-updates/vat/slovakia-parliament-approves-draft-law-for-mandatory-b2b-e-invoicing/)
+- **Malaysia**: Updated summary — Phase 5 (RM500K–RM1M) officially cancelled after Cabinet raised minimum threshold to RM1M (Dec 2025). Businesses below RM1M now fully exempt from MyInvois. (Source: https://www.vatcalc.com/malaysia/malaysia-e-invoicing-2023/)
+- **Malawi** (NEW): Added to tracker. MRA Electronic Invoicing System (EIS) replaces legacy EFDs. Pilot extended to Apr 30, 2026; mandatory for all VAT-registered businesses from May 1, 2026. VAT (EIS) Regulations 2026 published Jan 9. (Source: https://www.vatcalc.com/malawi/malawi-e-invoicing-2024/)
+- **Belize** (NEW): Added to tracker. 2026/27 Budget confirmed mandatory e-invoicing under GST regime. General Sales Tax (Amendment) Act 2024 provides legal basis. BTSD managing rollout with IDB/CIAT support. Mandatory by 2027. (Source: https://www.vatupdate.com/2026/04/11/belize-advances-mandatory-e-invoicing-under-its-gst-reform-agenda/)
+
+## April 13, 2026 (Run 2)
+
+### Changes detected:
+- **Ghana**: Status changed from "Upcoming" to "Live". E-VAT system now mandatory for all VAT-registered businesses since Jan 2026 (no revenue threshold). Invoices must be transmitted to GRA's Virtual Sales Data Controller (VSDC) for approval. mandateType updated to B2B + B2G + B2C. Covid-19 Levy abolished; VAT Flat Rate Scheme abolished. (Source: https://www.fonoa.com/resources/blog/ghana-e-vat-e-invoicing-2026)
+- **Namibia** (NEW): Added to tracker. 2026/27 Budget proposes VAT Act amendments for e-invoicing via real-time clearance model integrated with NamRA ITAS. Original 2026 launch delayed to 2028 or later. (Source: https://www.vatupdate.com/2026/04/09/namibias-2026-27-budget-vat-act-amendments-to-boost-key-sectors-and-modernise-compliance/)
+- **South Africa**: Updated summary — Tax Administration Laws Amendment Act 4 of 2026 promulgated Apr 1, 2026, introducing voluntary e-reporting for VAT vendors and granting SARS statutory authority for future e-invoicing requirements. (Source: https://regfollower.com/south-africa-enacts-2026-tax-reforms-with-corporate-tax-vat-fiscal-law-changes/)
+
 ## April 13, 2026
 
 ### Changes detected:

@@ -1,5 +1,14 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## April 14, 2026 (Feature Update)
+
+### New feature: Recent Changes Table
+- Added collapsible "Recent Changes (Last 30 Days)" table at the top of the dashboard
+- 39 tracked changes from Mar 2 – Apr 14, 2026 with date, country, type, description, and source article link
+- Filterable by change type: New, Update, Status, Correction, Milestone
+- Includes 8 March 2026 milestone entries sourced via web research (pre-tracker launch)
+- Color-coded type badges for quick visual scanning
+
 ## April 14, 2026
 
 ### Changes detected:

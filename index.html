@@ -31,6 +31,58 @@ const { useState, useMemo } = React;
 
 const LAST_UPDATED = "April 14, 2026";
 
+const recentChanges = [
+  // April 2026
+  { date: "Apr 14", country: "Oman", type: "Update", change: "Fawtara system details confirmed — Peppol Authority approved, Phase 1 (Aug 2026) targets ~153 largest taxpayers", source: "https://www.vatupdate.com/2025/12/26/omans-fawtara-phased-rollout-of-mandatory-b2b-e-invoicing-begins-august-2026/" },
+  { date: "Apr 14", country: "Slovakia", type: "Update", change: "Parliament approved mandatory B2B law (Dec 2025); 5-corner Peppol model with certified Digital Postmen, mandatory Jan 2027", source: "https://sovos.com/regulatory-updates/vat/slovakia-parliament-approves-draft-law-for-mandatory-b2b-e-invoicing/" },
+  { date: "Apr 14", country: "Malaysia", type: "Update", change: "Phase 5 cancelled — Cabinet raised minimum threshold to RM1M, exempting smaller businesses", source: "https://www.vatcalc.com/malaysia/malaysia-e-invoicing-2023/" },
+  { date: "Apr 14", country: "Malawi", type: "New", change: "Added (82 countries). MRA EIS mandatory from May 1, 2026 for all VAT-registered businesses", source: "https://www.vatcalc.com/malawi/malawi-e-invoicing-2024/" },
+  { date: "Apr 14", country: "Belize", type: "New", change: "Added (82 countries). GST e-invoicing mandate confirmed for 2027 under amended GST Act", source: "https://www.vatupdate.com/2026/04/11/belize-advances-mandatory-e-invoicing-under-its-gst-reform-agenda/" },
+  { date: "Apr 13", country: "Ghana", type: "Status", change: "Status upgraded: Upcoming \u2192 Live. E-VAT now mandatory for all VAT-registered businesses (no revenue threshold)", source: "https://www.fonoa.com/resources/blog/ghana-e-vat-e-invoicing-2026" },
+  { date: "Apr 13", country: "Namibia", type: "New", change: "Added (80 countries). Budget proposes VAT Act amendments for e-invoicing; launch delayed to 2028", source: "https://www.vatupdate.com/2026/04/09/namibias-2026-27-budget-vat-act-amendments-to-boost-key-sectors-and-modernise-compliance/" },
+  { date: "Apr 13", country: "South Africa", type: "Update", change: "Tax Administration Laws Amendment Act 4 of 2026 promulgated — voluntary e-reporting + SARS e-invoicing authority", source: "https://regfollower.com/south-africa-enacts-2026-tax-reforms-with-corporate-tax-vat-fiscal-law-changes/" },
+  { date: "Apr 13", country: "Greece", type: "Update", change: "Mandatory B2B e-invoicing: large taxpayers (>\u20AC1M) from Mar 2, 2026; all others by Oct 1, 2026", source: "https://www.vatcalc.com/greece/greece-mydata-e-book-and-e-invoices-update/" },
+  { date: "Apr 13", country: "Malaysia", type: "Update", change: "Phase 4 grace period extended to Dec 31, 2026 for SMEs (RM1M\u2013RM5M turnover)", source: "https://jomeinvoice.my/phase-4-einvoice-deadline-extended-sme-guide-2026/" },
+  { date: "Apr 12", country: "Bosnia & Herzegovina", type: "New", change: "Added. Federation passed Fiscalization Bill (Feb 2026); B2C by 2028, B2B/B2G by 2029", source: "https://www.vatupdate.com/2026/04/11/bosnia-and-herzegovina-mandates-e-invoicing-and-real-time-transaction-reporting-for-all-businesses/" },
+  { date: "Apr 12", country: "Latvia", type: "Correction", change: "Status corrected: Live \u2192 Partially Live. B2B postponed from 2026 to Jan 2028; only B2G mandatory", source: "https://www.comarch.com/trade-and-services/data-management/legal-regulation-changes/latvia-postpones-b2b-e-invoicing-mandate-to-2028-amid-technical-delays/" },
+  { date: "Apr 12", country: "Belgium", type: "Update", change: "Penalty details added: \u20AC1,500/\u20AC3,000/\u20AC5,000 graduated fines + 60\u2013100% of VAT per invoice", source: "https://www.vertexinc.com/resources/resource-library/belgiums-2026-e-invoicing-regulations-explained-scope-deadlines-and-penalties" },
+  { date: "Apr 12", country: "Norway", type: "Update", change: "Mandatory B2B e-invoicing formally instructed for Jan 1, 2027 (accelerated from 2028)", source: "https://www.vatupdate.com/2026/03/17/norway-plans-mandatory-b2b-e-invoicing-from-2027-and-full-digital-bookkeeping-by-2030/" },
+  { date: "Apr 12", country: "Gabon", type: "New", change: "Added. 2026 Finance Law mandates FNE for all taxpayers; soft landing through Jul 2026", source: "https://kpmg.com/us/en/taxnewsflash/news/2026/03/tnf-africa-gabon-finance-law-2026-includes-mandatory-e-invoicing-other-recent-tax-developments.html" },
+  { date: "Apr 11", country: "Ireland", type: "New", change: "Added. Three-phase B2B mandate: large corporates Nov 2028, intra-EU Nov 2029, ViDA Jul 2030", source: "https://www.vatupdate.com/2026/03/13/ireland-sets-phased-rollout-for-mandatory-b2b-e-invoicing-and-real-time-vat-reporting/" },
+  { date: "Apr 11", country: "Cameroon", type: "New", change: "Added. 2026 Finance Law mandates real-time e-invoicing via clearance model", source: "https://www.vatupdate.com/2026/02/26/cameroon-mandates-e-invoicing-in-2026-finance-law/" },
+  { date: "Apr 11", country: "Pakistan", type: "New", change: "Added. FBR e-invoicing mandate expanding via STGO 01/2026 with real-time reporting", source: "https://www.vatupdate.com/2026/04/11/pakistan-clarifies-integration-and-amendment-rules-for-mandatory-e-invoicing/" },
+  { date: "Apr 11", country: "Serbia", type: "Update", change: "Apr 2026 amendments: retail e-invoicing for corporate cardholders mandatory; new Rulebook effective", source: "https://www.comarch.com/trade-and-services/data-management/legal-regulation-changes/serbia-adopts-key-amendments-to-electronic-invoicing-and-vat-laws-in-2026/" },
+  { date: "Apr 11", country: "Denmark", type: "Update", change: "Adopted Nemhandel BIS 4 as unified e-invoicing standard; OIOUBL 2.1 sunset Jul 2029", source: "https://www.vatupdate.com/2026/03/23/denmark-unveils-nemhandel-bis-4-e-invoicing-standard-cancels-oioubl-3-0-sets-2029-migration-timeline/" },
+  { date: "Apr 11", country: "Romania", type: "Update", change: "Expanding mandatory e-invoicing to individuals (PFAs) from Jun 1, 2026; e-VAT enforcement tightening", source: "https://www.fiscal-requirements.com/news/5058" },
+  { date: "Apr 11", country: "Philippines", type: "Update", change: "BIR extended full mandate deadline to Dec 31, 2026 (from Mar 2026)", source: "https://kpmg.com/us/en/taxnewsflash/news/2025/10/philippines-e-invoicing-compliance-deadline-extended.html" },
+  { date: "Apr 11", country: "Hungary", type: "Update", change: "Public consultation on ViDA-aligned mandatory e-invoicing launched; EN 16931 confirmed", source: "https://www.vatupdate.com/2026/03/15/hungary-to-mandate-real-time-e-invoicing-and-vat-reporting-under-vida-reform-by-2026/" },
+  { date: "Apr 11", country: "Poland", type: "Status", change: "Status: Partially Live \u2192 Live. KSeF Phase 2 live Apr 1 for all VAT-registered businesses", source: "https://sovos.com/regulatory-updates/global-vat/spain-adopts-mandatory-b2b-e-invoicing/" },
+  { date: "Apr 11", country: "Spain", type: "Update", change: "Royal Decree 238/2026 published Mar 31 mandating B2B e-invoicing; large biz ~mid-2027, others ~2028", source: "https://kpmg.com/us/en/taxnewsflash/news/2026/03/spain-e-invoicing-mandate-b2b.html" },
+  { date: "Apr 11", country: "Belgium", type: "Update", change: "Grace period ended Apr 2026 \u2014 penalties now active for B2B e-invoicing non-compliance", source: "https://www.vertexinc.com/resources/resource-library/belgiums-2026-e-invoicing-regulations-explained-scope-deadlines-and-penalties" },
+  { date: "Apr 11", country: "Singapore", type: "Update", change: "Mandatory for new voluntary GST registrants from Apr 1, 2026", source: "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-invoicenow-requirement" },
+  { date: "Apr 11", country: "Bolivia", type: "Update", change: "Groups 10\u201312 must begin e-invoicing from Apr 1, 2026", source: "https://www.vatupdate.com/2026/03/28/bolivia-e-invoicing-groups-10-12-deadline/" },
+  { date: "Apr 11", country: "Turkey", type: "Update", change: "Updated e-invoice package and VAT code controls effective Apr 1, 2026", source: "https://www.vatupdate.com/2026/03/25/turkey-e-invoice-vat-code-update-april-2026/" },
+  { date: "Apr 11", country: "Germany", type: "Update", change: "Published GEBA framework; retiring older XRechnung profiles. ZUGFeRD v2.5 releasing May 20", source: "https://www.vatupdate.com/2026/03/20/germany-geba-framework-xrechnung-zugferd/" },
+  { date: "Apr 11", country: "UAE", type: "Update", change: "Introduced 24-month grace period for intra-VAT group e-invoicing obligations", source: "https://www.vatupdate.com/2026/04/06/uae-vat-group-e-invoicing-grace-period/" },
+  // March 2026 (from web research, pre-tracker)
+  { date: "Mar 31", country: "Spain", type: "Milestone", change: "Council of Ministers approved Royal Decree 238/2026 mandating B2B structured e-invoicing", source: "https://tradeshift.com/resources/compliance-fr/spain-b2b-e-invoicing-mandate-2027/" },
+  { date: "Mar 30", country: "Latvia", type: "Milestone", change: "Voluntary B2B e-invoicing opened ahead of mandatory 2028 phase; Peppol-aligned", source: "https://www.comarch.com/trade-and-services/data-management/legal-regulation-changes/latvia-postpones-b2b-e-invoicing-mandate-to-2028-amid-technical-delays/" },
+  { date: "Mar 23", country: "Denmark", type: "Milestone", change: "Officially unveiled Nemhandel BIS 4 standard; cancelled OIOUBL 3.0", source: "https://www.vatupdate.com/2026/03/23/denmark-unveils-nemhandel-bis-4-e-invoicing-standard-cancels-oioubl-3-0-sets-2029-migration-timeline/" },
+  { date: "Mar 17", country: "Norway", type: "Milestone", change: "Government formally instructed mandatory B2B e-invoicing from Jan 2027 (one year earlier)", source: "https://www.vatupdate.com/2026/03/17/norway-plans-mandatory-b2b-e-invoicing-from-2027-and-full-digital-bookkeeping-by-2030/" },
+  { date: "Mar 15", country: "Hungary", type: "Milestone", change: "Launched public consultation on ViDA-aligned mandatory e-invoicing reform", source: "https://www.vatupdate.com/2026/03/15/hungary-to-mandate-real-time-e-invoicing-and-vat-reporting-under-vida-reform-by-2026/" },
+  { date: "Mar 13", country: "Ireland", type: "Milestone", change: "Confirmed three-phase B2B e-invoicing mandate under VAT Modernisation programme", source: "https://www.vatupdate.com/2026/03/13/ireland-sets-phased-rollout-for-mandatory-b2b-e-invoicing-and-real-time-vat-reporting/" },
+  { date: "Mar 2", country: "Greece", type: "Milestone", change: "Mandatory B2B e-invoicing went live for large taxpayers (>\u20AC1M revenue)", source: "https://www.vatcalc.com/greece/greece-mydata-e-book-and-e-invoices-update/" },
+  { date: "Mar 2", country: "France", type: "Milestone", change: "Pilot programme for Sep 2026 mandatory B2B e-invoicing launched (runs through Aug 2026)", source: "https://www.vertexinc.com/en-gb/resources/resources-library/navigating-urgent-global-e-invoicing-mandates-march-2026-regulatory-alert" },
+];
+
+const typeConfig = {
+  New: { color: "#16a34a", bg: "#dcfce7" },
+  Update: { color: "#2563eb", bg: "#eff6ff" },
+  Status: { color: "#ea580c", bg: "#fff7ed" },
+  Correction: { color: "#dc2626", bg: "#fef2f2" },
+  Milestone: { color: "#7c3aed", bg: "#f5f3ff" },
+};
+
 const countries = [
   // ── Europe ──
   { name: "Austria", region: "Europe", status: "Partially Live", effectiveDate: "Jan 2014", mandateType: "B2G", model: "Post-Audit", format: "Peppol BIS", platform: "USP", penalties: "Administrative fines for non-compliance with B2G requirements", summary: "B2G e-invoicing mandatory since 2014 via Peppol. No B2B mandate yet; monitoring EU ViDA developments." },
@@ -262,6 +314,86 @@ function DetailRow({ label, value }) {
   );
 }
 
+function RecentChangesTable() {
+  const [expanded, setExpanded] = useState(true);
+  const [filterType, setFilterType] = useState("All");
+
+  const filtered = filterType === "All" ? recentChanges : recentChanges.filter(c => c.type === filterType);
+  const types = ["All", ...Object.keys(typeConfig)];
+
+  return (
+    <div style={{ marginBottom: 24, background: "#fff", borderRadius: 12, border: "1px solid #e2e8f0", overflow: "hidden" }}>
+      <div
+        onClick={() => setExpanded(!expanded)}
+        style={{
+          display: "flex", justifyContent: "space-between", alignItems: "center",
+          padding: "14px 20px", cursor: "pointer", background: "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <span style={{ fontSize: 18 }}>📋</span>
+          <span style={{ fontSize: 16, fontWeight: 700, color: "#fff" }}>Recent Changes (Last 30 Days)</span>
+          <span style={{ fontSize: 12, fontWeight: 500, color: "rgba(255,255,255,0.8)", background: "rgba(255,255,255,0.2)", padding: "2px 10px", borderRadius: 20 }}>
+            {recentChanges.length} updates
+          </span>
+        </div>
+        <span style={{ fontSize: 18, color: "#fff", transform: expanded ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s ease" }}>▾</span>
+      </div>
+      {expanded && (
+        <div style={{ padding: "12px 20px 20px" }}>
+          <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 12 }}>
+            {types.map(t => {
+              const active = filterType === t;
+              const tc = t !== "All" ? typeConfig[t] : null;
+              return (
+                <button key={t} onClick={() => setFilterType(t)} style={{
+                  padding: "4px 12px", borderRadius: 16, border: `1px solid ${active ? (tc ? tc.color : "#6366f1") : "#e2e8f0"}`,
+                  background: active ? (tc ? tc.bg : "#eef2ff") : "#fff", color: active ? (tc ? tc.color : "#6366f1") : "#64748b",
+                  cursor: "pointer", fontSize: 12, fontWeight: active ? 600 : 400, transition: "all 0.15s ease",
+                }}>{t}{t !== "All" ? ` (${recentChanges.filter(c => c.type === t).length})` : ""}</button>
+              );
+            })}
+          </div>
+          <div style={{ overflowX: "auto" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
+              <thead>
+                <tr style={{ borderBottom: "2px solid #e2e8f0" }}>
+                  <th style={{ textAlign: "left", padding: "8px 12px", color: "#64748b", fontWeight: 600, fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", whiteSpace: "nowrap" }}>Date</th>
+                  <th style={{ textAlign: "left", padding: "8px 12px", color: "#64748b", fontWeight: 600, fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", whiteSpace: "nowrap" }}>Country</th>
+                  <th style={{ textAlign: "left", padding: "8px 12px", color: "#64748b", fontWeight: 600, fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", whiteSpace: "nowrap" }}>Type</th>
+                  <th style={{ textAlign: "left", padding: "8px 12px", color: "#64748b", fontWeight: 600, fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em" }}>Change</th>
+                  <th style={{ textAlign: "center", padding: "8px 12px", color: "#64748b", fontWeight: 600, fontSize: 11, textTransform: "uppercase", letterSpacing: "0.05em", whiteSpace: "nowrap" }}>Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filtered.map((c, i) => {
+                  const tc = typeConfig[c.type] || typeConfig.Update;
+                  return (
+                    <tr key={i} style={{ borderBottom: "1px solid #f1f5f9", background: i % 2 === 0 ? "#fff" : "#fafbfc" }}>
+                      <td style={{ padding: "10px 12px", whiteSpace: "nowrap", fontWeight: 600, color: "#334155" }}>{c.date}</td>
+                      <td style={{ padding: "10px 12px", fontWeight: 600, color: "#1e293b", whiteSpace: "nowrap" }}>{c.country}</td>
+                      <td style={{ padding: "10px 12px" }}>
+                        <span style={{ fontSize: 11, fontWeight: 600, color: tc.color, background: tc.bg, padding: "2px 8px", borderRadius: 12, whiteSpace: "nowrap" }}>{c.type}</span>
+                      </td>
+                      <td style={{ padding: "10px 12px", color: "#475569", lineHeight: 1.5 }}>{c.change}</td>
+                      <td style={{ padding: "10px 12px", textAlign: "center" }}>
+                        <a href={c.source} target="_blank" rel="noopener noreferrer" style={{ color: "#6366f1", textDecoration: "none", fontSize: 12, fontWeight: 600 }} title={c.source}>🔗 Article</a>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+          <div style={{ marginTop: 10, fontSize: 11, color: "#94a3b8", textAlign: "right" }}>
+            Showing {filtered.length} of {recentChanges.length} changes · Mar 2 – Apr 14, 2026
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function EInvoicingTracker() {
   const [search, setSearch] = useState("");
   const [regionFilter, setRegionFilter] = useState("All");
@@ -337,6 +469,9 @@ function EInvoicingTracker() {
           Last updated: {LAST_UPDATED} · {countries.length} countries tracked
         </p>
       </div>
+
+      {/* Recent Changes */}
+      <RecentChangesTable />
 
       {/* Stats */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 10, marginBottom: 20 }}>
@@ -430,7 +565,7 @@ function EInvoicingTracker() {
   );
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<EInvoicingTracker />);
+ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(EInvoicingTracker));
   </script>
 </body>
 </html>

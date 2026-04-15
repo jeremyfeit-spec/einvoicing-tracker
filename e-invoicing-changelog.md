@@ -1,5 +1,21 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## April 15, 2026
+
+### Changes detected:
+- **France**: Updated summary with FNFE-MPE plenary takeaways (Apr 3, 2026) — DGFIP announced intent to become France's Peppol Authority; first Change Management Board meeting held Mar 26 with DGFIP, AIFE, OpenPeppol, and FNFE. Pilot progress: 10,400+ issuers, 15,100+ receivers, 112 Approved Platforms engaged ahead of Sep 2026 go-live. (Source: https://www.vatupdate.com/2026/04/14/e-invoicing-reform-key-takeaways-from-the-fnfe-mpe-plenary-of-3-april-2026/)
+
+## April 14, 2026 (Run 3)
+
+### Changes detected:
+- **Singapore**: Updated summary and mandateType with full mandatory InvoiceNow rollout timeline confirmed in Budget 2026. All GST-registered businesses must use InvoiceNow by Apr 2031 — phased: Apr 2028 (new compulsory + existing ≤S$200K), Apr 2029 (≤S$1M), Apr 2030 (≤S$4M), Apr 2031 (>S$4M). mandateType changed from "B2G + voluntary B2B" to "B2B + B2G". Government providing S$1K–S$5K transitional funding. (Source: https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2026/committee-of-supply-2026)
+
+## April 14, 2026 (Run 2)
+
+### Changes detected:
+- **France**: Updated platform and summary — PPF architecture confirmed as directory/data hub only; all invoice exchange now via accredited Plateformes Agréées (PA, formerly PDP). Platform field updated from "Chorus Pro / PPF" to "PPF + Plateformes Agréées (PA)". (Source: https://blog.weproc.com/en/electronic-invoicing/electronic-invoicing-architecture-ppf-pa-od-chorus-pro/)
+- **Saudi Arabia**: Updated summary with Wave 24 details — ZATCA notifying taxpayers with >SAR 375K revenue (2022-2024) from Apr 1, 2026; integration deadline Jun 30, 2026. Wave 23 (>SAR 750K) deadline was Mar 31, 2026. (Source: https://zatca.gov.sa/en/Pages/news_1426.aspx)
+
 ## April 14, 2026 (Feature Update)
 
 ### New feature: Recent Changes Table

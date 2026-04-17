@@ -1,5 +1,11 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## April 16, 2026
+
+### Changes detected:
+- **Italy**: Updated format to FatturaPA XML v1.9.1 and extended summary with new technical specifications details. Revenue Agency e-invoicing specs v1.9.1 (issued Mar 31, 2026) become mandatory May 15, 2026 — updated controls (invoice code 00327), revised WS/SFTP accreditation procedures, new AltriDatiGestionali codes for sports workers, updated recipient code limits. (Source: https://www.fiscal-requirements.com/news/5271)
+- **Colombia**: Added recentChanges entry for DIAN voluntary correction regime. DIAN draft resolution allows taxpayers to self-correct e-invoicing non-compliance by Apr 30, 2026 with capped penalties (10–1,500 UVT / ~US$143–$21,440). Country data unchanged (already Live). (Source: https://www.vatupdate.com/2026/04/09/colombia-proposes-voluntary-correction-regime-for-invoicing-errors-with-capped-penalties-until-april-2026/)
+
 ## April 15, 2026
 
 ### Changes detected:

@@ -1,5 +1,13 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## April 21, 2026
+
+### Changes detected:
+- **Spain**: Mandatory B2B e-invoicing start date confirmed as **October 1, 2027** for large businesses (≥€8M turnover); SMEs approximately 2028. effectiveDate updated from "mid-2027" to "Oct 2027". Draft Order on public platform/interoperability rules due Oct 1, 2026. (Source: https://www.vatupdate.com/2026/04/17/spain-sets-the-date-mandatory-b2b-e-invoicing-starts-on-1-october-2027/)
+- **Chile**: SII postponed new dispatch-guide and e-invoice compliance requirements for goods transport to **November 1, 2026** (from May 1, 2026), via Exempt Resolution SII No. 52. Enhanced documentation requirements for origin/destination, driver/transporter/vehicle info delayed. (Source: https://www.vatupdate.com/2026/04/17/chile-delays-new-dispatch-guide-and-e-invoice-requirements-to-november-2026/)
+- **Israel**: Real-time invoicing allocation-number threshold further lowered: NIS 20,000 (2025) → NIS 10,000 (Jan 2026) → **NIS 5,000 (Jun 2026)**, per Economic Efficiency Law 2023. Summary updated. (Source: https://www.vatupdate.com/2026/04/12/israel-to-lower-invoice-allocation-number-thresholds-further-in-2026-for-real-time-tax-compliance/)
+- **Slovakia**: Voluntary e-invoicing confirmed available from **May 1, 2026** ahead of mandatory Jan 2027. Also: all eKasa-registered sellers must offer cashless payment for transactions >€1 from May 1, 2026 (fines €500–€15,000). Penalties field updated to "Up to €100,000". (Source: https://www.vatupdate.com/2026/04/16/slovakia-to-launch-mandatory-e-invoicing-for-businesses-from-january-2027-key-steps-and-timeline/)
+
 ## April 16, 2026
 
 ### Changes detected:

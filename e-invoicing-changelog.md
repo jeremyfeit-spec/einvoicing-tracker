@@ -1,5 +1,14 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## April 22, 2026
+
+### Changes detected:
+- **Brazil**: PIS/COFINS invoicing rules under Complementary Law 224/2025 effective **April 1, 2026** — previously zero-rated transactions now taxed at **10% of normal rate**. Businesses must use **CST code 06** in NF-e and reference Complementary Law 224/2025 in additional tax information (tax credits retained). Country summary updated; platform updated to include NFC-e. (Source: https://www.vatupdate.com/2026/04/17/brazil-introduces-new-pis-cofins-invoicing-rules-under-complementary-law-224-2025-starting-april-2026/)
+- **Brazil**: SINIEF Adjustments 10–13/2026 add e-invoicing flexibility — retailers may choose between NF-e and NFC-e; **DANFE Type 2 (Simplified Non-fiscal Receipt)** rollout **Aug 3, 2026**; **NF-e references to NFC-e restricted from Oct 5, 2026**; enhanced offline contingency. Country summary extended. (Source: https://www.vatupdate.com/2026/04/20/brazil-modernizes-e-invoicing-new-rules-simplify-retail-enable-digital-receipts-reduce-printing/)
+- **Argentina**: **General Resolution RG 5824/2026** eliminates remaining e-invoicing exceptions — all previously excluded taxpayer categories mandated to issue electronic invoices from **July 1, 2026**. Platform field updated to "AFIP/ARCA (Factura Electrónica)"; summary updated. (Source: https://llbsolutions.com/electronic-invoicing-in-argentina-2026-end-of-exceptions-under-rg-5824-2026/)
+- **Vietnam**: Ministry of Finance draft decree (Apr 20, 2026) simplifies e-invoicing for e-commerce and low-value transactions — **platform operators may issue e-invoices on behalf of individual sellers**; VAT/PIT withholding obligations shifting to platforms. **Decree 310/2025/ND-CP** (effective **Jan 16, 2026**) restructures invoice-violation penalty framework. VAT threshold doubled to VND 200M annual revenue. Penalties field and summary updated. (Source: https://www.vatupdate.com/2026/04/20/vietnam-proposes-e-invoicing-reforms-for-e-commerce-small-businesses-and-high-risk-taxpayers/)
+- **Nigeria**: Status corrected **Live → Partially Live**. Medium taxpayers (₦1bn–₦5bn turnover) confirmed go-live **July 1, 2026**; compliance enforcement from **January 2027**. Phase 1 (large taxpayers) live since **Nov 2025**. Emerging/smaller taxpayers phased through 2028. Platform updated to "FIRS Merchant Buyer Solution (MBS)"; format to "Peppol BIS Billing 3.0 UBL". Integration via APIs or NITDA-authorised Accredited Access Point Providers. (Source: https://www.vatupdate.com/2026/02/28/nigeria-sets-e-invoicing-rollout-dates-for-medium-and-emerging-taxpayers-through-2028/)
+
 ## April 21, 2026
 
 ### Changes detected:

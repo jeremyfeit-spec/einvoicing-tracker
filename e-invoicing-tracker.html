@@ -30,10 +30,14 @@
 
 
 const { useState, useMemo } = React;
-const LAST_UPDATED = "April 22, 2026";
+
+
+const LAST_UPDATED = "April 23, 2026";
 
 const recentChanges = [
   // April 2026
+  { date: "Apr 23", country: "Kazakhstan", type: "New", change: "Added to tracker. Mandatory e-invoicing via IS ESF clearance platform effective Jan 1, 2026 for all VAT-registered entities (no turnover threshold). Grace period through Mar 31, 2026 for certain taxpayers. VAT credits only claimable when confirmed in IS ESF before filing VAT return. Penalties up to 30% of transaction value for non-compliance.", source: "https://www.vatupdate.com/2026/04/18/vat-credit-only-via-e-invoice-system-key-changes-for-taxpayers-from-2026/" },
+  { date: "Apr 23", country: "UAE", type: "Update", change: "FTA reduced several administrative tax penalties and updated VAT, excise, and corporate tax compliance rules effective April 14, 2026 to ease business burdens while aligning with international best practices. ClearTax approved as Accredited Service Provider under FTA e-invoicing framework ahead of July 2026 pilot.", source: "https://www.vatupdate.com/2026/04/17/uae-fta-reduces-tax-penalties-and-updates-compliance-rules-effective-april-2026/" },
   { date: "Apr 22", country: "Brazil", type: "Update", change: "PIS/COFINS invoicing rules under Complementary Law 224/2025 effective Apr 1, 2026 — transactions previously taxed at zero rate now subject to reduced tax (10% of normal rate). Businesses must use CST code 06 in NF-e and reference Complementary Law 224/2025 in additional tax information. Tax credits retained.", source: "https://www.vatupdate.com/2026/04/17/brazil-introduces-new-pis-cofins-invoicing-rules-under-complementary-law-224-2025-starting-april-2026/" },
   { date: "Apr 22", country: "Brazil", type: "Update", change: "SINIEF Adjustments 10–13/2026 introduce e-invoicing flexibility: retailers may choose between NF-e and NFC-e, DANFE Type 2 (Simplified Non-fiscal Receipt) rollout Aug 3, 2026, new restrictions on NF-e references to NFC-e from Oct 5, 2026, enhanced offline contingency.", source: "https://www.vatupdate.com/2026/04/20/brazil-modernizes-e-invoicing-new-rules-simplify-retail-enable-digital-receipts-reduce-printing/" },
   { date: "Apr 22", country: "Argentina", type: "Update", change: "General Resolution RG 5824/2026 eliminates remaining e-invoicing exceptions; all taxpayers (including previously excluded categories) mandated to issue electronic invoices from July 1, 2026. Companies must adapt systems and controls to comply.", source: "https://llbsolutions.com/electronic-invoicing-in-argentina-2026-end-of-exceptions-under-rg-5824-2026/" },
@@ -137,9 +141,10 @@ const countries = [
   { name: "Israel", region: "Middle East", status: "Partially Live", effectiveDate: "2024", mandateType: "B2B + B2G", model: "Post-Audit", format: "XML", platform: "ITA Portal", penalties: "Administrative fines", summary: "Phased e-invoicing rollout for domestic transactions. Real-time allocation number thresholds progressively lowered under Economic Efficiency Law 2023: NIS 20,000 (2025) → NIS 10,000 (Jan 2026) → NIS 5,000 (Jun 2026). Businesses must update invoicing systems to obtain allocation numbers for invoices above threshold." },
   { name: "Oman", region: "Middle East", status: "Upcoming", effectiveDate: "Aug 2026", mandateType: "B2B + B2G", model: "Clearance", format: "XML / JSON (Peppol)", platform: "OTA Fawtara", penalties: "TBD", summary: "Fawtara e-invoicing system approved as Peppol Authority. 5-corner model via accredited Access Points. Phase 1 (Aug 2026): ~153 largest taxpayers. Phase 2 (Feb 2027): all large VAT-registered. Phase 3 (mid-2027): all VAT-registered incl. SMEs. Phase 4 (2028): full B2G/G2B. Sandbox live since Feb 2026; ASP accreditation from May 2026. 53 mandatory fields, 10-year archiving." },
   { name: "Saudi Arabia", region: "Middle East", status: "Live", effectiveDate: "Dec 2021", mandateType: "B2B + B2G", model: "Clearance", format: "UBL 2.1 / XML", platform: "ZATCA FATOORA", penalties: "SAR 10,000+ per violation", summary: "FATOORA Phase 1 (generation) since Dec 2021. Phase 2 (integration/clearance) rolling out in waves. Wave 23 (>SAR 750K revenue): deadline Mar 31, 2026. Wave 24 (>SAR 375K revenue): ZATCA notifying taxpayers from Apr 1, deadline Jun 30, 2026." },
-  { name: "UAE", region: "Middle East", status: "Upcoming", effectiveDate: "Jul 2026", mandateType: "B2B + B2G", model: "Clearance", format: "TBD", platform: "FTA Portal", penalties: "TBD", summary: "Voluntary pilot starting Jul 2026. Large businesses (>AED 50M) mandatory from Jan 2027. 24-month grace period for intra-VAT group transactions." },
+  { name: "UAE", region: "Middle East", status: "Upcoming", effectiveDate: "Jul 2026", mandateType: "B2B + B2G", model: "Clearance", format: "PINT-AE (UBL 2.1 XML)", platform: "FTA Portal / Accredited Service Providers (Peppol)", penalties: "Up to AED 50,000; administrative penalties reduced by FTA effective Apr 14, 2026", summary: "Voluntary pilot starting Jul 2026. Large businesses (≥AED 50M) mandatory from Jan 1, 2027; <AED 50M from Jul 1, 2027; Government entities Oct 1, 2027. Five-corner Peppol model via accredited Access Point Service Providers. 24-month grace period for intra-VAT group transactions (exempt until Jan 2029). B2C and simplified invoices <AED 10K excluded. FTA reduced several administrative tax penalties effective Apr 14, 2026 to ease compliance burden. 50+ mandatory data elements; 14-day transmission deadline; records must be stored in UAE." },
 
   // ── Asia-Pacific ──
+  { name: "Kazakhstan", region: "Asia-Pacific", status: "Live", effectiveDate: "Jan 2026", mandateType: "B2B + B2G + B2C", model: "Clearance", format: "XML", platform: "IS ESF (Electronic Invoice System)", penalties: "Up to 30% of transaction value for non-compliance; VAT credits denied if not confirmed in IS ESF before filing", summary: "Mandatory e-invoicing via IS ESF clearance platform since Jan 1, 2026 for all VAT-registered entities and non-VAT taxpayers in specific sectors (logistics, healthcare, legal, commission sales). No turnover threshold. Grace period through Mar 31, 2026 for certain taxpayers. VAT credits only claimable when VAT is confirmed in IS ESF before filing the VAT return. Biometric ID verification required for high-risk transactions. Foreign digital service providers exempt from VAT invoice issuance. Penalties up to 30% of transaction value." },
   { name: "Australia", region: "Asia-Pacific", status: "Partially Live", effectiveDate: "Jul 2023", mandateType: "B2G", model: "Post-Audit", format: "Peppol BIS", platform: "Peppol Network", penalties: "Rejection of non-compliant B2G invoices", summary: "B2G via Peppol expanding. Government adoption accelerating across federal and state agencies." },
   { name: "China", region: "Asia-Pacific", status: "Partially Live", effectiveDate: "2024", mandateType: "B2B + B2G", model: "Clearance", format: "OFD / XML", platform: "Golden Tax / Fapiao", penalties: "Tax penalties for non-compliance", summary: "Fully digital fapiao rollout underway. Transitioning from paper-based Golden Tax to all-electronic invoicing." },
   { name: "India", region: "Asia-Pacific", status: "Live", effectiveDate: "Oct 2020", mandateType: "B2B + B2G", model: "Clearance", format: "JSON / e-Invoice Schema", platform: "IRP (Invoice Registration Portal)", penalties: "₹10,000–₹25,000 per invoice for non-compliance", summary: "Mandatory for businesses with turnover >₹5 Cr. All B2B invoices must be registered through IRP for IRN generation." },
@@ -402,7 +407,7 @@ function RecentChangesTable() {
             </table>
           </div>
           <div style={{ marginTop: 10, fontSize: 11, color: "#94a3b8", textAlign: "right" }}>
-            Showing {filtered.length} of {recentChanges.length} changes · Mar 2 – Apr 22, 2026
+            Showing {filtered.length} of {recentChanges.length} changes · Mar 2 – Apr 23, 2026
           </div>
         </div>
       )}
@@ -581,8 +586,9 @@ function EInvoicingTracker() {
   );
 }
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(React.createElement(EInvoicingTracker));
 
-ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(EInvoicingTracker));
   </script>
 </body>
 </html>

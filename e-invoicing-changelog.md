@@ -1,5 +1,11 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## April 23, 2026
+
+### Changes detected:
+- **Kazakhstan**: Added to tracker (now 84 countries). Mandatory e-invoicing via IS ESF clearance platform effective Jan 1, 2026 for all VAT-registered entities. No turnover threshold. VAT credits only claimable when confirmed in IS ESF before filing VAT return. Penalties up to 30% of transaction value. (Source: https://www.vatupdate.com/2026/04/18/vat-credit-only-via-e-invoice-system-key-changes-for-taxpayers-from-2026/)
+- **UAE**: FTA reduced several administrative tax penalties effective April 14, 2026. UAE country record updated with fuller details on Peppol model, phased timeline, and penalty reductions. ClearTax approved as Accredited Service Provider ahead of July 2026 pilot. (Source: https://www.vatupdate.com/2026/04/17/uae-fta-reduces-tax-penalties-and-updates-compliance-rules-effective-april-2026/)
+
 ## April 22, 2026
 
 ### Changes detected:

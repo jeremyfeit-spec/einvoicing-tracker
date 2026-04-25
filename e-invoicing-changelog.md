@@ -1,5 +1,11 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## April 24, 2026
+
+### Changes detected:
+- **North Macedonia** (NEW): Added to tracker (now 85 countries). e-Faktura mandatory e-invoicing programme launched July 1, 2025 by Public Revenue Office (PRO) and Ministry of Finance. CTC clearance model — all non-cash invoices transmitted in real-time for registration and validation. Pilot since Jan 1, 2026. Mandatory adoption Q3/Oct 2026. PRO urging businesses to join testing phase via official channels only. (Source: https://rtcsuite.com/north-macedonias-e-faktura-the-road-to-a-real-time-mandatory-e-invoicing-regime-by-2026/)
+- **Romania**: CNP-identified individuals (PFAs/sole traders) e-Factura transmission deadline extended to **June 1, 2026** (previously Jan 15, 2026 per GEO 89/2025). Romania summary updated to reflect confirmed June 1 deadline for all PFA/CNP categories. (Source: https://www.vatupdate.com/2026/04/14/ro-e-factura-deadline-for-cnp-identified-individuals-extended-to-june-1-2026/)
+
 ## April 23, 2026
 
 ### Changes detected:

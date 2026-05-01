@@ -128,3 +128,11 @@
 - **Germany**: Published GEBA framework; retiring older XRechnung profiles. ZUGFeRD v2.5 releasing May 20, 2026. (Source: VATupdate)
 - **Denmark**: Cancelled OIOUBL 3.0; announced "Unified E-Invoicing Standard" based on common UBL approach. (Source: VATupdate)
 - **UAE**: Introduced 24-month grace period for intra-VAT group e-invoicing obligations. (Source: VATupdate)
+
+## April 30, 2026
+
+### Changes detected:
+- **Malawi** (STATUS): Status upgraded Upcoming → **Live**. MRA Electronic Invoicing System (EIS) became mandatory for all VAT-registered businesses from May 1, 2026, confirmed after pilot extended to Apr 30. Legacy EFD-generated invoices no longer accepted for VAT input credit claims. Country record updated. (Source: https://sharedserviceslink.com/news/malawi-confirms-mandatory-vat-e-invoicing-from-1st-may-2026)
+- **Colombia** (UPDATE): DIAN voluntary correction regime for e-invoicing non-compliance (capped penalties 10–1,500 UVT / ~US$143–$21,440) officially closed April 30, 2026. Taxpayers who did not self-correct by end of day revert to standard DIAN penalty framework. Colombia country record and penalties field updated to reflect regime closure. (Source: https://www.vatupdate.com/2026/04/09/colombia-proposes-voluntary-correction-regime-for-invoicing-errors-with-capped-penalties-until-april-2026/)
+- **Hungary** (UPDATE): Government Decree 80/2026 introduces mandatory fuel type product codes (#NB#, #PB#, #NG#, #PG#) on receipts and invoices at fuel stations from **Sep 1, 2026** for RTIR compliance. Codes must appear as closing string in NAV RTIR cash register logs (field NA in ITL) and invoicing system lineDescription fields. Non-compliance risks rejected data submissions and audit penalties. Hungary country summary updated. (Source: https://www.fiscal-requirements.com/news/5313)
+- **Luxembourg** (NEW): Added to tracker (now 90 countries). B2G e-invoicing via Peppol BIS 3.0 has been mandatory since March 2023 for all suppliers to government. No current B2B mandate; national legislation expected 2026 for domestic B2B mandate by mid-2028/early 2029. ViDA cross-border mandate applies from Jul 2030. (Source: https://www.vatupdate.com/2026/04/25/briefing-document-podcast-e-invoicing-and-e-reporting-in-luxembourg/)

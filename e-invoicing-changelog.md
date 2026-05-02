@@ -1,5 +1,12 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## May 1, 2026
+
+### Changes detected:
+- **Malawi**: MRA Electronic Invoicing System (EIS) officially went live today as mandatory for all VAT-registered businesses. Pilot phase (Feb 1–Apr 30) ended; legacy EFD-generated invoices no longer accepted for VAT input credit claims. Civil society organizations backing rollout amid some business resistance. (Source: https://malawi24.com/2026/05/01/csos-back-eis-rollout-warn-of-business-resistance-vat-abuse/)
+- **Greece**: Transition period for large taxpayers (>€1M revenue) ends May 3, 2026 — Phase 1 penalties now actively enforced (50% of VAT due on unissued invoices). Country summary and penalties field updated to reflect transition end. Phase 2 (SMEs and others) remains Oct 1, 2026 with transition through Dec 31, 2026. (Source: https://www.fiscal-requirements.com/news/5193)
+- **Dominican Republic**: Phase 3 (final phase) deadline confirmed as May 15, 2026 for Small, Micro, Unclassified Taxpayers and state entities under Law No. 32-23. Country record substantially expanded: status remains Partially Live, effectiveDate updated from "2019" to "May 2026", mandateType expanded to "B2B + B2G + B2C", format updated to "XML (e-CF)", penalties and summary updated with full phased rollout details. After May 15, 2026, e-CF becomes only valid invoicing method nationwide. (Source: https://edicomgroup.com/blog/invoice-electronically-in-the-dominican-republic)
+
 ## April 24, 2026
 
 ### Changes detected:

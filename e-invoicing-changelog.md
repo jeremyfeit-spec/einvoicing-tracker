@@ -1,5 +1,17 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## May 4, 2026
+
+### Changes detected:
+- **Democratic Republic of Congo** (NEW): Added to tracker (now 90 countries). DRC ended its e-invoicing grace period; full enforcement of mandatory standardized e-invoicing (facture normalisée) now in effect. VAT deductions only allowed with compliant standardized invoices; non-compliant invoices no longer eligible for retroactive correction. Phase 1 launched Sep 15, 2024. (Source: https://www.vatupdate.com/2026/05/03/dr-congo-fully-enforces-e-invoicing-grace-period-ends-stricter-compliance-for-taxpayers-begins/)
+- **Dominican Republic**: Status upgraded **Partially Live → Live**. Phase 3 deadline (May 15, 2026) for Small, Micro, Unclassified Taxpayers and state entities has now passed. e-CF (Comprobante Fiscal Electrónico) is now the only valid invoicing method for all DGII-registered businesses nationwide under Law No. 32-23. (Source: https://edicomgroup.com/blog/invoice-electronically-in-the-dominican-republic)
+- **Malaysia**: Phase 4 interim relaxation (penalty-free) extended to **Dec 31, 2027** (previously Dec 31, 2026). Specific Guide v4.7 published Apr 20, 2026 replacing v4.6. Mandatory implementation date of Jan 1, 2026 unchanged; full enforcement from Jan 1, 2028. (Source: https://www.vatupdate.com/2026/04/23/malaysia-updates-e-invoicing-framework-specific-guide-v4-7-issued-and-phase-4-relaxation-extended-to-31-december-2027/)
+- **Bolivia**: Groups 9–12 (27,973 taxpayers) e-invoicing deadline extended to **Oct 1, 2026** (from Apr 1, 2026) under RND No. 102600000007. These groups may continue existing invoicing methods until Sep 30, 2026. From Oct 1, full electronic-only enforcement for all groups. (Source: https://www.vatupdate.com/2026/04/27/bolivia-extends-e-invoicing-deadline-for-taxpayers-in-groups-9-12-to-september-30-2026/)
+- **Brazil**: Simples Nacional taxpayers must issue electronic service invoices (NFS-e) exclusively via the National NFS-e Issuer from **Sep 1, 2026**. E-invoice confirmation deadline halved from 180 to **90 days** from June 2026. PAA (Procurador de Autorização de Acesso) framework introduced for delegated NF-e issuance. (Source: https://www.vatupdate.com/2026/05/01/brazil-requires-national-electronic-service-invoice-for-simples-nacional-taxpayers-starting-september-2026/)
+- **Morocco**: DGI completed 2025/26 B2B e-invoicing pilot; full rollout planned under 2026 Finance Act. Pre-launch update (May 2, 2026) confirms ongoing evaluation of post-audit vs CTC model. UBL/CII formats planned. No mandatory dates officially announced. (Source: https://www.vatupdate.com/2026/05/02/dgi-electronic-invoicing-program-pre-launch-update-and-next-steps/)
+- **Germany**: **ZUGFeRD 2.5** released May 20, 2026. Introduces native gross invoice support (book trade, publishing, petroleum industries) and alignment with latest EN 16931 code lists. FeRD published updated reference templates for construction, leasing, and reverse charge scenarios. Format field updated to "XRechnung / ZUGFeRD 2.5". (Source: https://www.vatupdate.com/2026/05/03/zugferd-2-5-launch-en-16931-alignment-and-gross-invoicing-for-germany-and-france/)
+- **Italy**: Technical specifications **v1.9.1** (issued Mar 31, 2026) became mandatory **May 15, 2026** as tracked. Updated controls on invoice code 00327, revised WS/SFTP accreditation procedures, new AltriDatiGestionali codes for sports workers, updated recipient code handling. (Source: https://www.fiscal-requirements.com/news/5271)
+
 ## May 1, 2026
 
 ### Changes detected:

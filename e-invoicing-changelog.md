@@ -1,5 +1,12 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## May 5, 2026
+
+### Changes detected:
+- **Burkina Faso** (NEW): Added to tracker (now 91 countries). DGI launched the Certified Electronic Invoice (FEC — Facture Électronique Certifiée) system in January 2026. Mandatory compliance begins July 1, 2026 for all domestic taxable persons with annual turnover ≥ XOF 50 million. Covers B2B, B2G, and B2C. Real-time clearance model with QR-coded invoices. Preparatory phase Jan–Jun 2026. Penalties XOF 500,000–2,000,000. (Source: https://www.vatupdate.com/2026/02/01/burkina-faso-fec-e-invoicing-scope-timeline-exemptions-and-penalties-for-2026-rollout/)
+- **UAE**: Status upgraded **Upcoming → Partially Live**. Voluntary 4-corner Peppol e-invoicing model officially launched (Apr 21–May 1, 2026) via FTA EmaraTax platform — businesses can now select an Accredited Service Provider and begin voluntary e-invoice exchange. 5-corner model (Corner 5 tax reporting to FTA) going live ahead of the mandatory pilot (Jul 1, 2026). Mandatory phases unchanged: large businesses (≥AED 50M) from Jan 1, 2027. (Source: https://www.vatupdate.com/2026/05/04/uae-launches-optional-4-corner-peppol-e-invoicing-mandatory-5-corner-model-coming-in-2027/)
+- **Bosnia and Herzegovina**: Penalty details confirmed: EUR 1,530–15,300 per violation; higher fines and possible temporary business bans for repeat violations. Fiscalization Law enacted Feb 12, 2026; full system implementation within 18 months; detailed bylaws within 180 days. Note: Republika Srpska and Brčko District operate separate fiscal systems — businesses operating nationwide must comply with multiple regulations. (Source: https://www.vatupdate.com/2026/05/03/bosnia-and-herzegovina-mandates-e-invoicing-and-real-time-reporting-under-new-fiscalization-law/)
+
 ## May 4, 2026
 
 ### Changes detected:

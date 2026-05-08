@@ -25,7 +25,7 @@
   <!-- Header -->
   <div style="text-align:center;margin-bottom:28px">
     <h1 style="font-size:26px;font-weight:800;color:#0f172a">🌐 Global E-Invoicing Mandate Tracker</h1>
-    <p style="color:#64748b;font-size:14px;margin-top:6px">Last updated: May 5, 2026 · 91 countries tracked</p>
+    <p style="color:#64748b;font-size:14px;margin-top:6px">Last updated: May 7, 2026 · 91 countries tracked</p>
   </div>
 
   <!-- Recent Changes -->
@@ -34,7 +34,7 @@
       <div style="display:flex;align-items:center;gap:10px">
         <span style="font-size:18px">📋</span>
         <span style="font-size:16px;font-weight:700;color:#fff">Recent Changes (Last 30 Days)</span>
-        <span style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.8);background:rgba(255,255,255,0.2);padding:2px 10px;border-radius:20px">65 updates</span>
+        <span style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.8);background:rgba(255,255,255,0.2);padding:2px 10px;border-radius:20px">69 updates</span>
       </div>
       <span id="changes-arrow" style="font-size:18px;color:#fff;transition:transform 0.2s ease;transform:rotate(180deg)">▾</span>
     </div>
@@ -42,7 +42,7 @@
       <!-- Type filters -->
       <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px" id="type-filters">
         <button onclick="filterChanges('All')" class="type-filter-btn active" data-type="All" style="padding:4px 12px;border-radius:16px;border:1px solid #6366f1;background:#eef2ff;color:#6366f1;cursor:pointer;font-size:12px;font-weight:600;transition:all 0.15s ease">All</button>
-        <button onclick="filterChanges('New')" class="type-filter-btn" data-type="New" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">New (11)</button><button onclick="filterChanges('Update')" class="type-filter-btn" data-type="Update" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Update (41)</button><button onclick="filterChanges('Status')" class="type-filter-btn" data-type="Status" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Status (3)</button><button onclick="filterChanges('Correction')" class="type-filter-btn" data-type="Correction" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Correction (1)</button><button onclick="filterChanges('Milestone')" class="type-filter-btn" data-type="Milestone" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Milestone (9)</button>
+        <button onclick="filterChanges('New')" class="type-filter-btn" data-type="New" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">New (11)</button><button onclick="filterChanges('Update')" class="type-filter-btn" data-type="Update" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Update (42)</button><button onclick="filterChanges('Status')" class="type-filter-btn" data-type="Status" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Status (3)</button><button onclick="filterChanges('Correction')" class="type-filter-btn" data-type="Correction" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Correction (1)</button><button onclick="filterChanges('Milestone')" class="type-filter-btn" data-type="Milestone" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Milestone (13)</button>
       </div>
       <div style="overflow-x:auto;overflow-y:auto;max-height:280px">
         <table style="width:100%;border-collapse:collapse;font-size:13px" id="changes-table">
@@ -56,6 +56,34 @@
             </tr>
           </thead>
           <tbody id="changes-tbody">
+    <tr style="border-bottom:1px solid #f1f5f9;background:#fff" data-type="Milestone">
+    <td style="padding:10px 12px;white-space:nowrap;font-weight:600;color:#334155">May 7</td>
+    <td style="padding:10px 12px;font-weight:600;color:#1e293b;white-space:nowrap">Slovakia</td>
+    <td style="padding:10px 12px"><span style="font-size:11px;font-weight:600;color:#7c3aed;background:#f5f3ff;padding:2px 8px;border-radius:12px;white-space:nowrap">Milestone</span></td>
+    <td style="padding:10px 12px;color:#475569;line-height:1.5">Slovakia issues further guidance on e-invoicing obligations (May 7): clarifies rules for non-VAT payers, VAT-exempt transactions, EDI usage, archiving, and handling of incorrect invoices. Financial Administration announced conference on mandatory e-invoicing in Bratislava, May 26, 2026. Voluntary e-invoicing officially live since May 1, 2026 — XML structured invoices via IS EFA/Peppol are now valid tax documents.</td>
+    <td style="padding:10px 12px;text-align:center"><a href="https://www.vatupdate.com/2026/05/07/slovakia-issues-further-guidance-on-e-invoicing-and-e-reporting-obligations/" target="_blank" rel="noopener noreferrer" style="color:#6366f1;text-decoration:none;font-size:12px;font-weight:600">🔗 Article</a></td>
+    </tr>
+    <tr style="border-bottom:1px solid #f1f5f9;background:#fafbfc" data-type="Milestone">
+    <td style="padding:10px 12px;white-space:nowrap;font-weight:600;color:#334155">May 6</td>
+    <td style="padding:10px 12px;font-weight:600;color:#1e293b;white-space:nowrap">Slovakia</td>
+    <td style="padding:10px 12px"><span style="font-size:11px;font-weight:600;color:#7c3aed;background:#f5f3ff;padding:2px 8px;border-radius:12px;white-space:nowrap">Milestone</span></td>
+    <td style="padding:10px 12px;color:#475569;line-height:1.5">Financial Administration launched interactive e-invoicing guide for businesses and entrepreneurs to assist preparation ahead of Jan 1, 2027 mandatory rollout. Guide covers IS EFA platform, certified Digital Postmen service providers, and structured XML (EN 16931/Peppol) requirements.</td>
+    <td style="padding:10px 12px;text-align:center"><a href="https://www.vatupdate.com/2026/05/06/financial-administration-launches-interactive-guide-for-e-invoicing-to-help-businesses-prepare/" target="_blank" rel="noopener noreferrer" style="color:#6366f1;text-decoration:none;font-size:12px;font-weight:600">🔗 Article</a></td>
+    </tr>
+    <tr style="border-bottom:1px solid #f1f5f9;background:#fff" data-type="Milestone">
+    <td style="padding:10px 12px;white-space:nowrap;font-weight:600;color:#334155">May 7</td>
+    <td style="padding:10px 12px;font-weight:600;color:#1e293b;white-space:nowrap">Kenya</td>
+    <td style="padding:10px 12px"><span style="font-size:11px;font-weight:600;color:#7c3aed;background:#f5f3ff;padding:2px 8px;border-radius:12px;white-space:nowrap">Milestone</span></td>
+    <td style="padding:10px 12px;color:#475569;line-height:1.5">KRA begins pre-filling VAT returns with validated customs data (iCMS) from May 2026. Validated export values auto-populate in iTax VAT returns. Exporters must link eTIMS invoice numbers and exporter PIN in iCMS for accurate pre-filling. Applies to exports to SCT, foreign countries, EPZs, and SEZs.</td>
+    <td style="padding:10px 12px;text-align:center"><a href="https://www.vatupdate.com/2026/04/29/kenya-to-pre-fill-vat-returns-with-customs-data-starting-may-2026/" target="_blank" rel="noopener noreferrer" style="color:#6366f1;text-decoration:none;font-size:12px;font-weight:600">🔗 Article</a></td>
+    </tr>
+    <tr style="border-bottom:1px solid #f1f5f9;background:#fafbfc" data-type="Update">
+    <td style="padding:10px 12px;white-space:nowrap;font-weight:600;color:#334155">May 7</td>
+    <td style="padding:10px 12px;font-weight:600;color:#1e293b;white-space:nowrap">Denmark</td>
+    <td style="padding:10px 12px"><span style="font-size:11px;font-weight:600;color:#2563eb;background:#eff6ff;padding:2px 8px;border-radius:12px;white-space:nowrap">Update</span></td>
+    <td style="padding:10px 12px;color:#475569;line-height:1.5">OIOUBL 2.1 Schematron v1.17.1 implemented May 18, 2026 (minor delay from May 15). Introduces stricter tax code consistency checks, enhanced Peppol VAT code alignment, and mandatory currency validation on amount fields. Rule F-LIB404 affected ~5% of invoices, prompting extended implementation period. OIOUBL 2.1 remains in use until Jul 2029.</td>
+    <td style="padding:10px 12px;text-align:center"><a href="https://sapeinvoice.com/denmark-oioubl-21-schematron-1170-rc/" target="_blank" rel="noopener noreferrer" style="color:#6366f1;text-decoration:none;font-size:12px;font-weight:600">🔗 Article</a></td>
+    </tr>
     <tr style="border-bottom:1px solid #f1f5f9;background:#fff">
     <td style="padding:10px 12px;white-space:nowrap;font-weight:600;color:#334155">May 5</td>
     <td style="padding:10px 12px;font-weight:600;color:#1e293b;white-space:nowrap">Burkina Faso</td>
@@ -528,7 +556,7 @@
         </table>
       </div>
       <div style="margin-top:10px;font-size:11px;color:#94a3b8;text-align:right" id="changes-count-label">
-        Showing 76 of 76 changes · Mar 2 – May 5, 2026
+        Showing 76 of 76 changes · Mar 2 – May 7, 2026
       </div>
     </div>
   </div>
@@ -1012,7 +1040,7 @@
       <div style="font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Format</span>OIOUBL / Nemhandel BIS 4</div>
       <div style="font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Platform</span>NemHandel</div>
       <div style="font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Penalties</span>Rejection of non-compliant B2G invoices</div>
-      <div style="grid-column:1/-1;font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Summary</span>B2G mandatory since 2005 via OIOUBL/Peppol. Cancelled OIOUBL 3.0; officially adopted Nemhandel BIS 4 (Peppol BIS 4-based, EN 16931 compliant) as new unified standard. OIOUBL 2.1 remains until Jul 2029; migration to Nemhandel BIS 4 starts 2028.</div>
+      <div style="grid-column:1/-1;font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Summary</span>B2G mandatory since 2005 via OIOUBL/Peppol. Cancelled OIOUBL 3.0; officially adopted Nemhandel BIS 4 (Peppol BIS 4-based, EN 16931 compliant) as new unified standard. OIOUBL 2.1 remains until Jul 2029; migration to Nemhandel BIS 4 starts 2028. OIOUBL 2.1 Schematron v1.17.1 implemented May 18, 2026 — introduces stricter tax code consistency checks, enhanced Peppol VAT code alignment, and mandatory currency validation on amount fields.</div>
     </div>
   </div><div class="country-card" style="background:#fff;border-radius:12px;border:1px solid #fdba74;padding:16px 20px;cursor:pointer;transition:all 0.2s ease;box-shadow:0 1px 3px rgba(0,0,0,0.04)" onclick="toggleCard(this)">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
@@ -1541,7 +1569,7 @@
       <div style="font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Format</span>JSON / XML</div>
       <div style="font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Platform</span>KRA (eTIMS)</div>
       <div style="font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Penalties</span>Fines per KRA regulations</div>
-      <div style="grid-column:1/-1;font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Summary</span>eTIMS (electronic Tax Invoice Management System) mandatory and expanding.</div>
+      <div style="grid-column:1/-1;font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Summary</span>eTIMS (electronic Tax Invoice Management System) mandatory and expanding. From May 2026, KRA pre-fills VAT returns with validated import/export data from iCMS — validated export values auto-populate in iTax VAT returns once export documents are issued by Customs. Exporters must link eTIMS zero-rated invoice numbers and exporter PIN in iCMS for accurate pre-filling.</div>
     </div>
   </div><div class="country-card" style="background:#fff;border-radius:12px;border:1px solid #fdba74;padding:16px 20px;cursor:pointer;transition:all 0.2s ease;box-shadow:0 1px 3px rgba(0,0,0,0.04)" onclick="toggleCard(this)">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
@@ -2179,7 +2207,7 @@
       <div style="font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Format</span>XML (UBL 2.1 / CII) EN 16931</div>
       <div style="font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Platform</span>IS EFA / Peppol</div>
       <div style="font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Penalties</span>Up to €100,000 for non-compliance</div>
-      <div style="grid-column:1/-1;font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Summary</span>Parliament approved mandatory B2B e-invoicing law (Dec 2025). Voluntary use available from May 1, 2026. Mandatory domestic B2B/B2G from Jan 1, 2027 via 5-corner Peppol model with certified &#39;Digital Postmen&#39; service providers. XML structured invoices required; simplified invoices &lt;€100 exempt. Cross-border (intra-EU) reporting obligations by Jun 30, 2030. Also from May 1, 2026: all eKasa-registered sellers must offer cashless payment for transactions over €1 (fines €500–€15,000 for non-compliance).</div>
+      <div style="grid-column:1/-1;font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Summary</span>Parliament approved mandatory B2B e-invoicing law (Dec 2025). Voluntary live from May 1, 2026 — XML invoices via IS EFA/Peppol are now valid tax documents. Mandatory domestic B2B/B2G from Jan 1, 2027 via 5-corner Peppol model with certified &#39;Digital Postmen&#39; service providers. XML structured invoices (EN 16931) required; simplified invoices &lt;€100 exempt. Financial Administration launched interactive guide (May 5–6, 2026) and issued further guidance on non-VAT payer rules, EDI usage, archiving, and incorrect invoices (May 7, 2026). Conference scheduled Bratislava May 26, 2026. Cross-border (intra-EU) reporting obligations by Jun 30, 2030. Also from May 1, 2026: all eKasa-registered sellers must offer cashless payment for transactions over €1 (fines €500–€15,000 for non-compliance).</div>
     </div>
   </div><div class="country-card" style="background:#fff;border-radius:12px;border:1px solid #93c5fd;padding:16px 20px;cursor:pointer;transition:all 0.2s ease;box-shadow:0 1px 3px rgba(0,0,0,0.04)" onclick="toggleCard(this)">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
@@ -2645,7 +2673,7 @@ function filterChanges(type) {
     if (show) shown++;
   });
   document.getElementById('changes-count-label').textContent = 
-    'Showing ' + shown + ' of ' + recentChanges.length + ' changes · Mar 2 – May 1, 2026';
+    'Showing ' + shown + ' of ' + recentChanges.length + ' changes · Mar 2 – May 7, 2026';
 }
 
 function filterByRegion(region) {

@@ -1,5 +1,12 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## May 7, 2026
+
+### Changes detected:
+- **Slovakia** (MILESTONE): Voluntary e-invoicing officially live since May 1, 2026 — XML structured invoices exchanged via IS EFA/Peppol are now valid tax documents. Financial Administration launched interactive e-invoicing guide (May 5–6, 2026) covering IS EFA platform, certified Digital Postmen service providers, and EN 16931/Peppol requirements. Further guidance issued May 7 clarifying rules for non-VAT payers, VAT-exempt transactions, EDI usage, archiving, and handling of incorrect invoices. Conference on mandatory e-invoicing announced for Bratislava, May 26, 2026. Slovakia country summary updated. (Source: https://www.vatupdate.com/2026/05/07/slovakia-issues-further-guidance-on-e-invoicing-and-e-reporting-obligations/)
+- **Kenya** (MILESTONE): KRA begins pre-filling VAT returns with validated import/export data from the Integrated Customs Management System (iCMS) from May 2026. Validated export values automatically pre-filled in iTax VAT returns once export documents are issued by Customs. Exporters and clearing agents must now capture exporter PIN and a valid eTIMS zero-rated invoice number in iCMS. Applies to exports to Single Customs Territory, foreign countries, EPZs, and SEZs. Kenya platform updated to "KRA (eTIMS / iTax)" and summary extended. (Source: https://www.vatupdate.com/2026/04/29/kenya-to-pre-fill-vat-returns-with-customs-data-starting-may-2026/)
+- **Denmark** (UPDATE): OIOUBL 2.1 Schematron v1.17.1 implementation date adjusted to **May 18, 2026** (minor delay from May 15). Introduces stricter tax code consistency checks, enhanced Peppol VAT code alignment, and mandatory currency validation on amount fields. Rule F-LIB404 affected ~5% of invoices, prompting extended implementation period. OIOUBL 2.1 remains the active standard until Jul 2029 when Nemhandel BIS 4 migration completes. Denmark country summary updated. (Source: https://sapeinvoice.com/denmark-oioubl-21-schematron-1170-rc/)
+
 ## May 5, 2026
 
 ### Changes detected:

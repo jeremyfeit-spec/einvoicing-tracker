@@ -1,5 +1,11 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## May 8, 2026
+
+### Changes detected:
+- **Qatar** (NEW): Added to tracker (now 92 countries). Qatar Cabinet approved a draft e-invoicing law and implementing regulations on May 6, 2026, establishing a legal framework for electronic invoices and credit notes. Developed by Ministry of Finance and General Tax Authority. Expected model mirrors Saudi Arabia's FATOORA — clearance for B2B/B2G, reporting for B2C. Phased implementation likely from Jan 1, 2027. No confirmed timeline or technical specifications yet. Businesses advised to begin system impact evaluation. (Source: https://www.vatupdate.com/2026/05/08/qatar-approves-draft-e-invoicing-law/)
+- **Germany** (UPDATE): BMF March 23, 2026 FAQ update (widely covered May 7–8): all e-invoices must be self-contained. Any referenced supporting documents (contracts, timesheets, delivery notes) must be physically embedded in the e-invoice file — external links or text references alone are no longer compliant. Applies to both XRechnung (XML) and ZUGFeRD formats. Credit notes must also be structured e-invoices referencing the original invoice in XML. Aligns with §14 UStG and EN 16931; prepares market ahead of 2027 mandatory B2B issuance. Germany country summary updated. (Source: https://www.vatupdate.com/2026/05/07/germanys-march-2026-e-invoice-faq-update-all-references-must-be-self-contained-in-the-e-invoice/)
+
 ## May 7, 2026
 
 ### Changes detected:

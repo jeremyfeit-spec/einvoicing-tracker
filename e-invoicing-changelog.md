@@ -1,5 +1,17 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## May 12, 2026
+
+### Changes detected:
+- **Dominican Republic** (STATUS): Status revised **Live → Partially Live**. DGII granted an automatic 6-month extension to Phase 3 deadline for small, micro, and unclassified taxpayers — now November 15, 2026 (was May 15, 2026). Phases 1 and 2 (large and medium taxpayers) remain fully live. Sanctions under Law No. 32-23 will apply from November 15, 2026 for Phase 3 non-compliance. effectiveDate updated to "Nov 2026 (Phase 3)". (Source: https://www.vatupdate.com/2026/05/09/dominican-republic-extends-e-invoicing-deadline-for-small-micro-and-unclassified-taxpayers-to-november-2026/)
+- **Sri Lanka** (STATUS): Status upgraded **Upcoming → Partially Live**. IRD launched National e-Invoicing System for VAT under 2026 Budget. Phase 1 (export-oriented VAT businesses — garment and tea exporters) live from May 1, 2026 via Web API with RAMIS platform. Tea brokers already integrated. New mandatory VAT invoice format from July 2026. Phase 2 (all VAT-registered persons) targeted by end of 2026. model updated to "Clearance", format to "XML (Web API / RAMIS)", platform to "IRD RAMIS Platform". (Source: https://www.vatupdate.com/2026/05/09/sri-lanka-launches-national-e-invoicing-system-for-vat-under-2026-budget-full-rollout-by-year-end/)
+- **Romania** (UPDATE): Mandatory e-invoice registration expanded to non-profits, farmers, and individuals with new deadlines (May 9, 2026), further broadening scope beyond PFAs (sole traders) covered in earlier extension. Country summary updated. (Source: https://www.vatupdate.com/2026/05/09/romania-expands-mandatory-e-invoice-registration-to-non-profits-farmers-and-individuals-with-new-deadlines/)
+- **Namibia** (UPDATE): Three-year phased rollout confirmed — mandatory e-invoicing delayed from single April 2026 launch to a graduated 2026/27–2028/29 implementation. All VAT-registered businesses covered; phase timing by taxpayer category pending official announcement. effectiveDate updated to "2026–2029 (phased)". (Source: https://www.vatupdate.com/2026/05/06/namibia-delays-mandatory-e-invoicing-adopts-phased-rollout-over-three-years/)
+- **Greece** (UPDATE): myDATA e-Delivery Phase B delayed — full digital goods-movement tracking (e-transport) now starts October 12, 2026. TARIC-aligned commodity coding mandatory from January 1, 2027. Core B2B e-invoicing deadlines unchanged. Summary updated. (Source: https://www.vatupdate.com/2026/05/09/greece-delays-mydata-e-delivery-phase-two-full-digital-tracking-now-starts-october-2026/)
+- **Turkey** (UPDATE): Mandatory e-Beyan system for VAT electronic declarations expanded to additional provinces from May 2026. Summary updated. (Source: https://www.vatupdate.com/2026/05/09/turkey-expands-mandatory-e-beyan-system-for-vat-returns-to-more-provinces-from-may-2026/)
+
+Sources checked: VATupdate Week 19 Newsletter, VATupdate e-invoicing developments tracker, regfollower.com, comarch.com
+
 ## May 8, 2026
 
 ### Changes detected:

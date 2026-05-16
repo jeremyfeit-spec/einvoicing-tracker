@@ -1,5 +1,13 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## May 15, 2026
+
+### Changes detected:
+- **Belgium** (UPDATE): Government considering extending mandatory B2B e-invoicing scope to non-resident (non-established) businesses with only Belgian VAT registration by January 1, 2028, aligned with start of mandatory near real-time e-reporting. Currently non-established businesses are excluded from the Jan 2026 mandate but may use e-invoicing voluntarily. Discussion stage; no final decision yet. Would require full Peppol capability, determination logic, and reporting alignment for foreign VAT registrants. Belgium country summary updated. (Source: https://www.vatupdate.com/2026/05/14/belgium-may-extend-e-invoicing-mandate-to-non-resident-vat-holders-by-2028/)
+- **EU (ViDA)** (MILESTONE): Updated EN 16931 e-invoicing standard expected to be formally published by May 2026 — will be the reference standard for the ViDA 2030 Digital Reporting Requirements (DRR) mandate. CEN approved the revision on Feb 13, 2026, adding new data fields for B2B/DRR reporting: IBAN, corrective invoice numbering, early payment discounts, FX data, and a broader range of VAT scheme codes. Member States gain flexibility to use alternative standards for domestic mandates while remaining compatible with the EU framework. Second draft explanatory notes in progress through early 2027. (Source: https://www.vatcalc.com/eu/eu-updates-en-16931-e-invoicing-standard-for-vida/)
+
+Sources checked: VATupdate (May 14 e-invoicing developments tracker), vatcalc.com (EN 16931 update), invoiced.com (Global E-Invoicing Mandates 2026), e-invoice.app, fiskaly.com, sovos.com, theinvoicinghub.com, vertexinc.com (April/May 2026 regulatory alerts). 92 countries reviewed.
+
 ## May 12, 2026
 
 ### Changes detected:

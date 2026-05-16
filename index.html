@@ -25,7 +25,7 @@
   <!-- Header -->
   <div style="text-align:center;margin-bottom:28px">
     <h1 style="font-size:26px;font-weight:800;color:#0f172a">🌐 Global E-Invoicing Mandate Tracker</h1>
-    <p style="color:#64748b;font-size:14px;margin-top:6px">Last updated: May 12, 2026 · 92 countries tracked</p>
+    <p style="color:#64748b;font-size:14px;margin-top:6px">Last updated: May 15, 2026 · 92 countries tracked</p>
   </div>
 
   <!-- Recent Changes -->
@@ -34,14 +34,14 @@
       <div style="display:flex;align-items:center;gap:10px">
         <span style="font-size:18px">📋</span>
         <span style="font-size:16px;font-weight:700;color:#fff">Recent Changes (Last 30 Days)</span>
-        <span style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.8);background:rgba(255,255,255,0.2);padding:2px 10px;border-radius:20px">88 updates</span>
+        <span style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.8);background:rgba(255,255,255,0.2);padding:2px 10px;border-radius:20px">90 updates</span>
       </div>
       <span id="changes-arrow" style="font-size:18px;color:#fff;transition:transform 0.2s ease;transform:rotate(180deg)">▾</span>
     </div>
     <div id="changes-body" style="padding:12px 20px 20px">
       <!-- Type filters -->
       <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px" id="type-filters">
-        <button onclick="filterChanges('All')" class="type-filter-btn active" data-type="All" style="padding:4px 12px;border-radius:16px;border:1px solid #6366f1;background:#eef2ff;color:#6366f1;cursor:pointer;font-size:12px;font-weight:600;transition:all 0.15s ease">All</button><button onclick="filterChanges('New')" class="type-filter-btn" data-type="New" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">New (14)</button><button onclick="filterChanges('Update')" class="type-filter-btn" data-type="Update" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Update (53)</button><button onclick="filterChanges('Status')" class="type-filter-btn" data-type="Status" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Status (6)</button><button onclick="filterChanges('Correction')" class="type-filter-btn" data-type="Correction" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Correction (1)</button><button onclick="filterChanges('Milestone')" class="type-filter-btn" data-type="Milestone" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Milestone (14)</button>
+        <button onclick="filterChanges('All')" class="type-filter-btn active" data-type="All" style="padding:4px 12px;border-radius:16px;border:1px solid #6366f1;background:#eef2ff;color:#6366f1;cursor:pointer;font-size:12px;font-weight:600;transition:all 0.15s ease">All</button><button onclick="filterChanges('New')" class="type-filter-btn" data-type="New" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">New (14)</button><button onclick="filterChanges('Update')" class="type-filter-btn" data-type="Update" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Update (54)</button><button onclick="filterChanges('Status')" class="type-filter-btn" data-type="Status" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Status (6)</button><button onclick="filterChanges('Correction')" class="type-filter-btn" data-type="Correction" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Correction (1)</button><button onclick="filterChanges('Milestone')" class="type-filter-btn" data-type="Milestone" style="padding:4px 12px;border-radius:16px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:400;transition:all 0.15s ease">Milestone (15)</button>
       </div>
       <div style="overflow-x:auto;overflow-y:auto;max-height:280px">
         <table style="width:100%;border-collapse:collapse;font-size:13px" id="changes-table">
@@ -55,7 +55,21 @@
             </tr>
           </thead>
           <tbody id="changes-tbody">
-            <tr style="border-bottom:1px solid #f1f5f9;background:#fff" data-type="Status">
+            <tr style="border-bottom:1px solid #f1f5f9;background:#fff" data-type="Update">
+      <td style="padding:10px 12px;white-space:nowrap;font-weight:600;color:#334155">May 15</td>
+      <td style="padding:10px 12px;font-weight:600;color:#1e293b;white-space:nowrap">Belgium</td>
+      <td style="padding:10px 12px"><span style="font-size:11px;font-weight:600;color:#2563eb;background:#eff6ff;padding:2px 8px;border-radius:12px;white-space:nowrap">Update</span></td>
+      <td style="padding:10px 12px;color:#475569;line-height:1.5">Belgium considering extending mandatory B2B e-invoicing scope to non-resident (non-established) businesses with only Belgian VAT registration by January 1, 2028, coinciding with start of mandatory near real-time e-reporting. Currently non-established businesses are excluded from the Jan 2026 mandate but may use e-invoicing voluntarily. Discussion stage; no final decision yet. Would require full Peppol capability, determination logic, and reporting alignment for foreign VAT registrants.</td>
+      <td style="padding:10px 12px;text-align:center"><a href="https://www.vatupdate.com/2026/05/14/belgium-may-extend-e-invoicing-mandate-to-non-resident-vat-holders-by-2028/" target="_blank" rel="noopener noreferrer" style="color:#6366f1;text-decoration:none;font-size:12px;font-weight:600" title="https://www.vatupdate.com/2026/05/14/belgium-may-extend-e-invoicing-mandate-to-non-resident-vat-holders-by-2028/">🔗 Article</a></td>
+    </tr>
+<tr style="border-bottom:1px solid #f1f5f9;background:#fafbfc" data-type="Milestone">
+      <td style="padding:10px 12px;white-space:nowrap;font-weight:600;color:#334155">May 15</td>
+      <td style="padding:10px 12px;font-weight:600;color:#1e293b;white-space:nowrap">EU (ViDA)</td>
+      <td style="padding:10px 12px"><span style="font-size:11px;font-weight:600;color:#7c3aed;background:#f5f3ff;padding:2px 8px;border-radius:12px;white-space:nowrap">Milestone</span></td>
+      <td style="padding:10px 12px;color:#475569;line-height:1.5">Updated EN 16931 e-invoicing standard expected to be formally published by May 2026, serving as reference standard for the ViDA 2030 Digital Reporting Requirements (DRR) mandate. CEN approved revision on Feb 13, 2026 — adds new data fields specifically for B2B/DRR reporting: IBAN, corrective invoice numbering, early payment discounts, FX data, and broader range of VAT scheme codes. Member States gain flexibility to use alternative standards for domestic mandates while staying compatible with EU framework. Second draft explanatory notes in progress through early 2027.</td>
+      <td style="padding:10px 12px;text-align:center"><a href="https://www.vatcalc.com/eu/eu-updates-en-16931-e-invoicing-standard-for-vida/" target="_blank" rel="noopener noreferrer" style="color:#6366f1;text-decoration:none;font-size:12px;font-weight:600" title="https://www.vatcalc.com/eu/eu-updates-en-16931-e-invoicing-standard-for-vida/">🔗 Article</a></td>
+    </tr>
+<tr style="border-bottom:1px solid #f1f5f9;background:#fff" data-type="Status">
       <td style="padding:10px 12px;white-space:nowrap;font-weight:600;color:#334155">May 12</td>
       <td style="padding:10px 12px;font-weight:600;color:#1e293b;white-space:nowrap">Dominican Republic</td>
       <td style="padding:10px 12px"><span style="font-size:11px;font-weight:600;color:#ea580c;background:#fff7ed;padding:2px 8px;border-radius:12px;white-space:nowrap">Status</span></td>
@@ -758,7 +772,7 @@
   </div>
 </div>
 <div class="country-card" data-region="Europe" data-status="Live" 
-  data-search="belgium mandatory b2b e-invoicing since jan 1, 2026 via peppol. grace period ended apr 2026 — graduated penalties now enforced. over 1m peppol recipients nationwide. b2b + b2g peppol ubl 2.1 peppol network"
+  data-search="belgium mandatory b2b e-invoicing since jan 1, 2026 via peppol. grace period ended apr 2026 — graduated penalties now enforced. over 1m peppol recipients nationwide. government considering (may 14, 2026) extending scope to non-resident (non-established) businesses with only a belgian vat registration by jan 1, 2028, aligned with start of mandatory near real-time e-reporting. non-established entities currently excluded from the jan 2026 mandate but may use e-invoicing voluntarily; decision still pending. b2b + b2g peppol ubl 2.1 peppol network"
   onclick="toggleCard(this)"
   style="background:#fff;border-radius:12px;border:1px solid #86efac;padding:16px 20px;cursor:pointer;transition:all 0.2s ease;box-shadow:0 1px 3px rgba(0,0,0,0.04)">
   <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
@@ -780,7 +794,7 @@
     <div style="font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Format</span>Peppol UBL 2.1</div>
     <div style="font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Platform</span>Peppol Network</div>
     <div style="font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Penalties</span>Graduated fines: €1,500 (1st offence), €3,000 (2nd), €5,000 (3rd+) per quarter; plus 60–100% of VAT due per invoice for non-issuance</div>
-    <div style="grid-column:1/-1;font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Summary</span>Mandatory B2B e-invoicing since Jan 1, 2026 via Peppol. Grace period ended Apr 2026 — graduated penalties now enforced. Over 1M Peppol recipients nationwide.</div>
+    <div style="grid-column:1/-1;font-size:13px;color:#475569;line-height:1.5"><span style="font-weight:600;color:#1e293b;display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px">Summary</span>Mandatory B2B e-invoicing since Jan 1, 2026 via Peppol. Grace period ended Apr 2026 — graduated penalties now enforced. Over 1M Peppol recipients nationwide. Government considering (May 14, 2026) extending scope to non-resident (non-established) businesses with only a Belgian VAT registration by Jan 1, 2028, aligned with start of mandatory near real-time e-reporting. Non-established entities currently excluded from the Jan 2026 mandate but may use e-invoicing voluntarily; decision still pending.</div>
   </div>
 </div>
 <div class="country-card" data-region="Europe" data-status="Upcoming" 

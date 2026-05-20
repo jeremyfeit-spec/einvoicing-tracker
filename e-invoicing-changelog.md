@@ -1,5 +1,17 @@
 # E-Invoicing Mandate Tracker — Changelog
 
+## May 19, 2026
+
+### Changes detected:
+- **UAE** (UPDATE): FTA extended the deadline for large businesses to appoint an Accredited Service Provider (ASP) for e-invoicing to October 30, 2026 (from original July 1 pilot date). The Jan 1, 2027 mandatory go-live for large businesses (≥AED 50M) is unchanged — FTA clarified this is not a mandate delay. effectiveDate updated to "Jan 2027". Country summary updated. (Source: https://www.vatupdate.com/2026/05/14/uae-extends-asp-appointment-deadline-for-large-businesses-under-e-invoicing-to-october-2026/)
+- **France** (UPDATE): External Specifications v3.2 published May 16, 2026 — mandates hourly batching for PA submissions to PPF (no more individual invoice submissions), adds agriculture/food sector use cases, confirms PPF-based VAT return pre-fill postponed to 2029. AFNOR FD Z42-029 archiving guidance published May 15, 2026. Country summary updated. (Source: https://www.vatupdate.com/2026/05/16/france-external-specifications-v3-2-key-technical-updates-ahead-of-the-2026-e-invoicing-mandate/)
+- **Germany** (UPDATE): BMF clarified (May 14, 2026) that from January 2027, e-invoices delivered by email must be in valid structured XML format (XRechnung or ZUGFeRD). Email delivery of PDF-only or non-XML hybrid formats will not be compliant for B2B issuance. Country summary updated. (Source: https://www.vatupdate.com/2026/05/14/e-invoices-in-germany-email-delivery-allowed-only-in-valid-xml-formats-from-2027/)
+- **Peru** (UPDATE): SUNAT accelerating e-invoicing rollout in 2026 to bring additional taxpayer categories into the CPE system, while extending penalty-free relief under SIRE framework. Country summary and penalties updated. (Source: https://www.vatupdate.com/2026/05/15/peru-accelerates-e-invoicing-rollout-and-extends-penalty-relief-under-sire-framework/)
+- **Finland** (UPDATE): Finnish Tax Administration sending e-invoice proposals to ~400,000 taxpayers in May 2026 as part of its pre-filled VAT return digitalization initiative. Country summary updated. (Source: https://www.vatupdate.com/2026/05/05/400000-taxpayers-to-receive-e-invoice-proposals-from-tax-administration-in-may-2026/)
+- **Turkey** (UPDATE): Next-generation payment devices (OKC NG) must have built-in e-document integration capability from May 2026 — new POS/payment terminals must generate and transmit e-documents directly. Country summary updated. (Source: https://www.vatupdate.com/2026/05/14/turkey-requires-e-document-integration-in-next-gen-payment-devices-from-may-2026/)
+
+Sources checked: VATupdate Week 19–20/2026 e-invoicing newsletter (May 18), Revo Wind-Down Week ending May 17, VATupdate country profiles page (May 19), EY e-invoicing developments tracker (May 14). 92 countries tracked.
+
 ## May 15, 2026
 
 ### Changes detected:
